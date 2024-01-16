@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="659.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group12.explorewild.form2Controller">
+   <children>
+      <Label layoutX="406.0" layoutY="292.0" prefHeight="102.0" prefWidth="255.0" text="Form 2">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

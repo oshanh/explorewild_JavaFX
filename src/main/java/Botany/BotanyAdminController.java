@@ -1,4 +1,4 @@
-package com.group12.explorewild;
+package Botany;
 
 
 public class BotanyAdminController {

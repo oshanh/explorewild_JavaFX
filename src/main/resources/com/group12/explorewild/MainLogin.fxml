@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group12.explorewild.LoginController">
+   <children>
+      <AnchorPane fx:id="mainForm" prefHeight="400.0" prefWidth="747.0">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="354.0" styleClass="left-form" stylesheets="@../../../style/cssTest.css">
+               <children>
+                  <Label layoutX="28.0" layoutY="177.0" prefHeight="72.0" prefWidth="316.0" text="Zoo Management System" textAlignment="CENTER" textFill="#e1dada" wrapText="true">
+                     <font>
+                        <Font name="Marker Felt Thin" size="27.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane layoutX="354.0" prefHeight="400.0" prefWidth="328.0" stylesheets="@../../../style/cssTest.css">
+               <children>
+                  <Label layoutX="81.0" layoutY="105.0" prefHeight="39.0" prefWidth="194.0" text="Welcome Back!" textFill="#1b0101">
+                     <font>
+                        <Font name="Marker Felt Thin" size="27.0" />
+                     </font></Label>
+                  <TextField fx:id="unameTxt" layoutX="52.0" layoutY="172.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@../../../style/cssTest.css" />
+                  <PasswordField fx:id="pwdTxt" layoutX="52.0" layoutY="224.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@../../../style/cssTest.css" />
+                  <Button fx:id="loginBtn" layoutX="53.0" layoutY="285.0" mnemonicParsing="false" onAction="#adminLogin" prefHeight="40.0" prefWidth="220.0" styleClass="login-btnLK" stylesheets="@../../../style/cssTest.css" text="Login" />
+                  <Button fx:id="closeBtn" layoutX="234.0" layoutY="8.0" minWidth="49.0" mnemonicParsing="false" onAction="#close" opacity="0.51" prefHeight="36.0" prefWidth="49.0" textFill="#f20307" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+                     <font>
+                        <Font name="Tahoma Bold" size="19.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

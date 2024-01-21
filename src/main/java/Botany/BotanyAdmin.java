@@ -1,4 +1,4 @@
-package com.group12.explorewild.DashBoards;
+package Botany;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

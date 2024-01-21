@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1433.0" stylesheets="@../../style/ZooStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Zoo.Admin.ZooAdminController">
+   <children>
+      <Rectangle fx:id="sidePanel" arcHeight="5.0" arcWidth="5.0" fill="#174f84" height="768.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="sidePanel" width="280.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b6c8d9" height="100.0" layoutX="280.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1153.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0e5ea" height="668.0" layoutX="280.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1153.0" />
+      <Label fx:id="lblWelcome" layoutX="1134.0" layoutY="15.0" prefHeight="47.0" prefWidth="145.0" text="Welcome">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <VBox layoutY="162.0" prefHeight="270.0" prefWidth="280.0">
+         <children>
+            <Button fx:id="animalBtn" alignment="CENTER" mnemonicParsing="false" onAction="#AnimalTabAction" prefHeight="107.0" prefWidth="280.0" styleClass="sidePanelButtons" stylesheets="@../../style/ZooStyle.css" text="Animal">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../img/logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="empBtn" mnemonicParsing="false" onAction="#EmployeeTabAction" prefHeight="47.0" prefWidth="280.0" styleClass="sidePanelButtons" text="Employee" />
+            <Button fx:id="usersBtn" mnemonicParsing="false" onAction="#UsersTabAction" prefHeight="58.0" prefWidth="280.0" styleClass="sidePanelButtons" text="Users" />
+            <Button fx:id="ticketsBtn" mnemonicParsing="false" onAction="#TicketsTabAction" prefHeight="84.0" prefWidth="280.0" styleClass="sidePanelButtons" text="Tickets" />
+         </children>
+      </VBox>
+      <AnchorPane fx:id="ancMain" layoutX="286.0" layoutY="104.0" prefHeight="659.0" prefWidth="1146.0">
+         <children>
+            <Label layoutX="237.0" layoutY="138.0" prefHeight="171.0" prefWidth="359.0" text="Label">
+               <font>
+                  <Font size="53.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button fx:id="btnLogout" layoutX="1348.0" layoutY="26.0" mnemonicParsing="false" onAction="#logoutBtnAction" styleClass="btnLogout" text="Logout" />
+   </children>
+</AnchorPane>

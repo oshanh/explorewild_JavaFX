@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="659.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Zoo.Admin.TicketTab.ticketsController">
+   <children>
+      <TextField layoutX="164.0" layoutY="116.0" />
+      <TextField layoutX="512.0" layoutY="116.0" />
+      <TextField layoutX="513.0" layoutY="39.0" />
+   </children>
+</AnchorPane>

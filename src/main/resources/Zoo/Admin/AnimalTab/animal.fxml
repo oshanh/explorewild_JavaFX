@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="659.0" prefWidth="1145.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Zoo.Admin.AnimalTab.animalController">
+   <children>
+      <Label fx:id="animalID" layoutX="14.0" layoutY="51.0" text="ID" />
+      <Label fx:id="animalIdBox" layoutX="68.0" layoutY="51.0" text="id" />
+      <Label layoutX="338.0" layoutY="51.0" text="Birth Day" />
+      <Label layoutX="14.0" layoutY="103.0" text="Name" />
+      <Label layoutX="338.0" layoutY="103.0" text="Family" />
+      <TextField fx:id="animalNameBox" layoutX="68.0" layoutY="99.0" prefHeight="26.0" prefWidth="232.0" />
+      <DatePicker fx:id="animalDateBox" layoutX="406.0" layoutY="47.0" prefHeight="26.0" prefWidth="232.0" />
+      <TextField fx:id="animalFamilyBox" layoutX="406.0" layoutY="100.0" prefHeight="26.0" prefWidth="232.0" />
+      <TableView fx:id="animalTable" layoutX="14.0" layoutY="223.0" prefHeight="418.0" prefWidth="826.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="80.00002765655518" text="ID" />
+          <TableColumn fx:id="NameCol" prefWidth="265.59999084472656" text="Name" />
+            <TableColumn fx:id="BirthdayCol" prefWidth="181.60003662109375" text="BirthDay" />
+            <TableColumn fx:id="familyCol" minWidth="0.0" prefWidth="142.39990234375" text="Family" />
+            <TableColumn fx:id="editCol" minWidth="0.0" prefWidth="142.39990234375" text="edit" />
+        </columns>
+      </TableView>
+      <TextField fx:id="animalSearchBox" layoutX="70.0" layoutY="184.0" prefHeight="26.0" prefWidth="232.0" />
+      <Label layoutX="16.0" layoutY="189.0" text="Search" />
+      <HBox alignment="CENTER" layoutX="338.0" layoutY="153.0" prefHeight="62.0" prefWidth="316.0" spacing="30.0">
+
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,17 +1,21 @@
-package com.group12.explorewild;
+package Zoo;
 
+
+import Zoo.Admin.ZooAdminController;
+import com.group12.explorewild.DbConnection_Lakshan;
+import com.group12.explorewild.DBconnection;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
 
 import java.io.IOException;
 import java.net.URL;
@@ -21,7 +25,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-public class LoginController  {
+public class ZooLoginController {
 
     @FXML
     private Button closeBtn;
@@ -38,14 +42,16 @@ public class LoginController  {
     @FXML
     private TextField unameTxt;
 
-    private Connection connect;
+    private final Connection connect=DBconnection.getConnection();
     private PreparedStatement prepare;
     private ResultSet result;
     private int result2;
 
+
+
     public void adminLogin() {
         String sql = "SELECT * FROM admin WHERE username = ? and password = ?";
-        connect = DbConnection_Lakshan.connectDb();
+
 
         try {
             Alert alert;
@@ -70,6 +76,7 @@ public class LoginController  {
                     //then proceed to the dashbord
                     alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setTitle("Information");
+
                     alert.setHeaderText(null);
                     alert.setContentText("Login successfull!");
                     alert.showAndWait();
@@ -78,10 +85,13 @@ public class LoginController  {
                     loginBtn.getScene().getWindow().hide();
 
                     //link dashBord form
-                    Parent root = FXMLLoader.load(getClass().getResource("dashBord.fxml"));
+                    Parent root = FXMLLoader.load(getClass().getResource("/Zoo/Admin/ZooAdmin.fxml"));
                     Stage stage = new Stage();
                     Scene scene = new Scene(root);
                     stage.setScene(scene);
+                    stage.setTitle("Zoo Management System - Admin");
+                    Image icon=new Image("/logo.png");
+                    stage.getIcons().add(icon);
                     stage.show();
 
                 } else {

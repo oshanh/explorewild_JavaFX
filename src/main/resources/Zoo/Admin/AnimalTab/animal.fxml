@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -18,19 +19,21 @@
       <TextField fx:id="animalNameBox" layoutX="68.0" layoutY="99.0" prefHeight="26.0" prefWidth="232.0" />
       <DatePicker fx:id="animalDateBox" layoutX="406.0" layoutY="47.0" prefHeight="26.0" prefWidth="232.0" />
       <TextField fx:id="animalFamilyBox" layoutX="406.0" layoutY="100.0" prefHeight="26.0" prefWidth="232.0" />
-      <TableView fx:id="animalTable" layoutX="14.0" layoutY="223.0" prefHeight="418.0" prefWidth="826.0">
+      <TableView fx:id="animalTable" layoutX="14.0" layoutY="223.0" onMouseClicked="#tableToBoxes" prefHeight="418.0" prefWidth="826.0">
         <columns>
-          <TableColumn fx:id="idCol" prefWidth="80.00002765655518" text="ID" />
-          <TableColumn fx:id="NameCol" prefWidth="265.59999084472656" text="Name" />
-            <TableColumn fx:id="BirthdayCol" prefWidth="181.60003662109375" text="BirthDay" />
-            <TableColumn fx:id="familyCol" minWidth="0.0" prefWidth="142.39990234375" text="Family" />
-            <TableColumn fx:id="editCol" minWidth="0.0" prefWidth="142.39990234375" text="edit" />
+          <TableColumn fx:id="idCol" prefWidth="115.19997882843018" text="ID" />
+          <TableColumn fx:id="NameCol" prefWidth="231.2000274658203" text="Name" />
+            <TableColumn fx:id="BirthdayCol" prefWidth="234.4000244140625" text="BirthDay" />
+            <TableColumn fx:id="familyCol" minWidth="0.0" prefWidth="244.7999267578125" text="Family" />
         </columns>
       </TableView>
-      <TextField fx:id="animalSearchBox" layoutX="70.0" layoutY="184.0" prefHeight="26.0" prefWidth="232.0" />
+      <TextField fx:id="animalSearchBox" layoutX="70.0" layoutY="184.0" onKeyReleased="#searchAnimal" prefHeight="26.0" prefWidth="232.0" />
       <Label layoutX="16.0" layoutY="189.0" text="Search" />
       <HBox alignment="CENTER" layoutX="338.0" layoutY="153.0" prefHeight="62.0" prefWidth="316.0" spacing="30.0">
-
-      </HBox>
+         <children>
+            <Button fx:id="addAnimal" mnemonicParsing="false" onAction="#addAnimalOnAction" text="Add" />
+            <Button fx:id="remove" mnemonicParsing="false" onAction="#removeAnimalOnAction" text="Remove" />
+            <Button fx:id="updateAnimalBtn" mnemonicParsing="false" onAction="#updateAnimalOnAction" text="Update" />
+         </children></HBox>
    </children>
 </AnchorPane>

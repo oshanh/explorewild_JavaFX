@@ -2,7 +2,9 @@ module com.group12.explorewild {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
-    
+    requires java.base;
+
+
 
 
     opens com.group12.explorewild to javafx.fxml;

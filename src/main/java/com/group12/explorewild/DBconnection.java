@@ -10,12 +10,15 @@ public class DBconnection {
     public static Connection getConnection(){
 
         try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            Class.forName("org.sqlite.JDBC");
+            //Class.forName("com.mysql.cj.jdbc.Driver");
+            String sqLiteDB="explorewild.db";
             String dbname="explorewild";
             String username="root";
             String password="";
             String port="3306";
-            conn=DriverManager.getConnection("jdbc:mysql://localhost:"+port+"/"+dbname,username,password);
+            //conn=DriverManager.getConnection("jdbc:mysql://localhost:"+port+"/"+dbname,username,password);
+            conn=DriverManager.getConnection("jdbc:sqlite:"+sqLiteDB);
 
             System.out.print("connected DB");
         }

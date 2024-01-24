@@ -1,13 +1,12 @@
-package Zoo.Admin.AnimalTab;
+package Zoo.Admin.EmployeeTab;
 
-import java.util.Date;
+public class Employee {
 
-public class Animal {
     int id;
     String name,family;
     String date;
 
-    public Animal(int id, String name, String date, String family) {
+    public Employee(int id, String name, String date, String family) {
         this.id = id;
         this.name = name;
         this.family = family;

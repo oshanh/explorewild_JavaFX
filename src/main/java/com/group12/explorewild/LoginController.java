@@ -45,7 +45,7 @@ public class LoginController  {
 
     public void adminLogin() {
         String sql = "SELECT * FROM admin WHERE username = ? and password = ?";
-        connect = DbConnection_Lakshan.connectDb();
+        connect = DBconnection.getConnection();
 
         try {
             Alert alert;

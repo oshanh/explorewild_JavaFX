@@ -2,7 +2,7 @@ package Zoo;
 
 
 import Zoo.Admin.ZooAdminController;
-import com.group12.explorewild.DbConnection_Lakshan;
+
 import com.group12.explorewild.DBconnection;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -42,7 +42,7 @@ public class ZooLoginController {
     @FXML
     private TextField unameTxt;
 
-    private final Connection connect=DBconnection.getConnection();
+    private  Connection connect;
     private PreparedStatement prepare;
     private ResultSet result;
     private int result2;
@@ -65,6 +65,7 @@ public class ZooLoginController {
                 alert.setContentText("Please fill all blank fields");
                 alert.showAndWait();
             } else {
+                connect=DBconnection.getConnection();
                 prepare = connect.prepareStatement(sql);
                 prepare.setString(1, unameTxt.getText());
                 prepare.setString(2, pwdTxt.getText());

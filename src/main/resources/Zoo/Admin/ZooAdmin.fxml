@@ -26,7 +26,7 @@
                         <Image url="@../../img/logo.png" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="118.0" prefWidth="182.0" text="ExploreWild">
+                  <Label prefHeight="118.0" prefWidth="182.0" text="ExploreWild" textFill="WHITE">
                      <font>
                         <Font size="30.0" />
                      </font>

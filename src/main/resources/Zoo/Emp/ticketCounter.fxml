@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="659.0" prefWidth="900.0" stylesheets="@../../style/ZooStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Zoo.Emp.TicketCounterController">
    <children>
@@ -18,5 +19,10 @@
       <Button layoutX="44.0" layoutY="177.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="132.0" layoutY="177.0" mnemonicParsing="false" text="Button" />
       <Button layoutX="240.0" layoutY="177.0" mnemonicParsing="false" text="Button" />
+      <Label layoutX="217.0" layoutY="302.0" prefHeight="134.0" prefWidth="367.0" text="Emp View">
+         <font>
+            <Font size="66.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

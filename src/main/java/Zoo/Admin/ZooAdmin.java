@@ -3,6 +3,7 @@ package Zoo.Admin;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -19,6 +20,9 @@ public class ZooAdmin extends Application {
         Scene scene=new Scene(fxmlLoader.load());
         primaryStage.setTitle("ZooAdmin");
         primaryStage.setScene(scene);
+        Image icon=new Image("/logo.png");
+        primaryStage.getIcons().add(icon);
+
         primaryStage.show();
 
 

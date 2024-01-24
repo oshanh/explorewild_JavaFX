@@ -49,10 +49,10 @@ public class ZooAdminController {
         ancMain.getChildren().clear();
         ancMain.getChildren().add(load);
 
-        this.animalBtn.setStyle("-fx-background-color: rgba(25,220,19,0.6)");
-        this.empBtn.setStyle("-fx-background-color: #176c0c;");
-        this.ticketsBtn.setStyle("-fx-background-color: #176c0c;");
-        this.usersBtn.setStyle("-fx-background-color: #176c0c;");
+        this.animalBtn.setStyle("-fx-background-color: rgb(4, 246, 125);;-fx-background-radius: 50;-fx-border-radius: 50;");
+        this.empBtn.setStyle("-fx-background-color: #000f73;");
+        this.ticketsBtn.setStyle("-fx-background-color: #000f73;");
+        this.usersBtn.setStyle("-fx-background-color: #000f73;");
     }
 
     @FXML
@@ -62,10 +62,10 @@ public class ZooAdminController {
 
         ancMain.getChildren().clear();
         ancMain.getChildren().add(load);
-        this.animalBtn.setStyle("-fx-background-color: #176c0c;");
-        this.empBtn.setStyle("-fx-background-color: rgba(25,220,19,0.6)");
-        this.ticketsBtn.setStyle("-fx-background-color: #176c0c;");
-        this.usersBtn.setStyle("-fx-background-color: #176c0c;");
+        this.animalBtn.setStyle("-fx-background-color: #000f73;");
+        this.empBtn.setStyle("-fx-background-color: rgb(4, 246, 125);;-fx-background-radius: 50;-fx-border-radius: 50;");
+        this.ticketsBtn.setStyle("-fx-background-color: #000f73;");
+        this.usersBtn.setStyle("-fx-background-color: #000f73;");
     }
 
     @FXML
@@ -76,10 +76,10 @@ public class ZooAdminController {
         ancMain.getChildren().clear();
         ancMain.getChildren().add(load);
 
-        this.animalBtn.setStyle("-fx-background-color: #176c0c;");
-        this.empBtn.setStyle("-fx-background-color: #176c0c;");
-        this.usersBtn.setStyle("-fx-background-color: rgba(25,220,19,0.6)");
-        this.ticketsBtn.setStyle("-fx-background-color: #176c0c;");
+        this.animalBtn.setStyle("-fx-background-color: #000f73;");
+        this.empBtn.setStyle("-fx-background-color: #000f73;");
+        this.usersBtn.setStyle("-fx-background-color: rgb(4, 246, 125);;-fx-background-radius: 50;-fx-border-radius: 50;");
+        this.ticketsBtn.setStyle("-fx-background-color: #000f73;");
 
     }
 
@@ -91,10 +91,10 @@ public class ZooAdminController {
         ancMain.getChildren().clear();
         ancMain.getChildren().add(load);
 
-        this.animalBtn.setStyle("-fx-background-color: #176c0c;");
-        this.empBtn.setStyle("-fx-background-color: #176c0c;");
-        this.usersBtn.setStyle("-fx-background-color: #176c0c;");
-        this.ticketsBtn.setStyle("-fx-background-color: rgba(25,220,19,0.6)");
+        this.animalBtn.setStyle("-fx-background-color: #000f73;");
+        this.empBtn.setStyle("-fx-background-color: #000f73;");
+        this.usersBtn.setStyle("-fx-background-color: #000f73;");
+        this.ticketsBtn.setStyle("-fx-background-color: rgb(4, 246, 125);;-fx-background-radius: 50;-fx-border-radius: 50;");
     }
 
     public void setUsername(String s){

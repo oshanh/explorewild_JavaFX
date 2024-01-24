@@ -1,13 +1,17 @@
 
 
 .btnLogout{
-    -fx-pref-width: 60px;
+    -fx-pref-width: 20px;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-background-color: rgba(255, 255, 255, 0);
 }
 
 .sidePanel{
-    -fx-background-color: #176c0c;
+
+    -fx-font: #000f73;
     -fx-border-radius: 50px;
-    -fx-fill: #087522;
+
 }
 
 .sidePanelButtons{
@@ -16,13 +20,13 @@
     -fx-background-radius: 0;
     -fx-border-radius: 0;
     -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-text-fill: #ffffff;
 
 }
 .sidePanelButtons:pressed{
-    -fx-pref-width: 280px;
-    -fx-pref-height: 70px;
-    -fx-background-radius: 0;
-    -fx-border-radius: 0;
-    -fx-background-color: rgba(78, 206, 255, 0.47);
+
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-background-color: rgb(4, 246, 125);
 
 }

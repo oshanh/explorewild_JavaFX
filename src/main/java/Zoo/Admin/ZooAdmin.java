@@ -17,7 +17,8 @@ public class ZooAdmin extends Application {
         FXMLLoader fxmlLoader=new FXMLLoader(ZooAdmin.class.getResource("ZooAdmin.fxml"));
         //Parent load=fxmlLoader.load();
 
-        Scene scene=new Scene(fxmlLoader.load());
+        Scene scene=new Scene(fxmlLoader.load(),1434,740);
+
         primaryStage.setTitle("ZooAdmin");
         primaryStage.setScene(scene);
         Image icon=new Image("/logo.png");

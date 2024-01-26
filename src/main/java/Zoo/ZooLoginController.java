@@ -73,7 +73,8 @@ public class ZooLoginController {
                 result = prepare.executeQuery();
 
                 if (result.next()) {
-
+                    connect.close();
+                    System.out.println("DBconnection closed");
                     //then proceed to the dashbord
                     alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setTitle("Information");
@@ -97,6 +98,9 @@ public class ZooLoginController {
 
                 } else {
                     //error msg show
+                    System.out.println(pwdTxt.getText());
+                    int hash=pwdTxt.getText().hashCode();
+                    System.out.println(hash);
                     alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("error");
                     alert.setHeaderText(null);

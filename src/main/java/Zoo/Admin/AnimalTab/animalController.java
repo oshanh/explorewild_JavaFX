@@ -26,7 +26,7 @@ public class animalController implements Initializable {
 
 
     String query=null;
-    Connection conn=DBconnection.getConnection();
+    Connection conn;
 
     ResultSet rs=null;
     PreparedStatement pst=null;
@@ -104,6 +104,7 @@ public class animalController implements Initializable {
     }
 
     private void deleteAnimal(){
+        conn=DBconnection.getConnection();
         animal=animalTable.getSelectionModel().getSelectedItem();
 
 
@@ -118,6 +119,8 @@ public class animalController implements Initializable {
             System.out.println("=== "+r+" Rows deleted ===");
 
             refresh();
+            conn.close();
+            System.out.println("DBconnection closed");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -128,7 +131,7 @@ public class animalController implements Initializable {
     private void updateAnimal(){
 
 
-
+        conn=DBconnection.getConnection();
 
         String sql="UPDATE animal SET name=? , birthday=? , family =? WHERE id=? ";
 
@@ -147,6 +150,8 @@ public class animalController implements Initializable {
 
             pst.execute();
             refresh();
+            conn.close();
+            System.out.println("DBconnection closed");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -157,6 +162,7 @@ public class animalController implements Initializable {
     }
     @FXML
     void refresh() {
+        conn=DBconnection.getConnection();
 
 
         try {
@@ -173,7 +179,8 @@ public class animalController implements Initializable {
 
 
             }
-
+            conn.close();
+            System.out.println("DBconnection closed");
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -182,6 +189,8 @@ public class animalController implements Initializable {
     }
     @FXML
     private void searchAnimal(){
+        conn=DBconnection.getConnection();
+
         String sb=animalSearchBox.getText();
         String sql = "Select *  from animal where id LIKE '%" + sb + "%' OR name LIKE '%" + sb + "%' OR  birthday like '%" + sb + "%' OR family like '%" + sb + "%' ";
 
@@ -195,6 +204,8 @@ public class animalController implements Initializable {
                 animalTable.setItems(AnimalList);
 
             }
+            conn.close();
+            System.out.println("DBconnection closed");
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -216,6 +227,8 @@ public class animalController implements Initializable {
 
 
     private void addAnimal(){
+        conn=DBconnection.getConnection();
+
         animalNameBox.getText();
 
 
@@ -235,6 +248,8 @@ public class animalController implements Initializable {
 
             pst.execute();
             refresh();
+            conn.close();
+            System.out.println("DBconnection closed");
         } catch (SQLException e) {
             e.printStackTrace();
         }

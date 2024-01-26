@@ -86,6 +86,9 @@ public class LoginController  {
 
                 } else {
                     //error msg show
+                    System.out.println(pwdTxt.getText());
+                    int hash=pwdTxt.getText().hashCode();
+                    System.out.println(hash);
                     alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("error");
                     alert.setHeaderText(null);

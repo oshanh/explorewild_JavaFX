@@ -12,13 +12,14 @@ public class DBconnection {
         try{
             Class.forName("org.sqlite.JDBC");
             //Class.forName("com.mysql.cj.jdbc.Driver");
-            String sqLiteDB="explorewild.db";
+            //String sqLiteDB="C:\\Users\\oshan\\Documents\\NetBeansProjects\\my\\mydb1.db";
             String dbname="explorewild";
+            String SQLitedbname="explorewild.db";
             String username="root";
             String password="";
             String port="3306";
             //conn=DriverManager.getConnection("jdbc:mysql://localhost:"+port+"/"+dbname,username,password);
-            conn=DriverManager.getConnection("jdbc:sqlite:"+sqLiteDB);
+            conn=DriverManager.getConnection("jdbc:sqlite:"+SQLitedbname);
 
             System.out.print("connected DB");
         }

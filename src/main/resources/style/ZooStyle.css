@@ -9,13 +9,14 @@
 
 .sidePanel{
 
-    -fx-fill: #000f73;
-    -fx-border-radius: 50px;
+
+    -fx-background-color: #01280a;
 
 }
 
 .sidePanelButtons{
-    -fx-pref-width: 280px;
+
+    -fx-pref-width: 235px;
     -fx-pref-height: 70px;
     -fx-background-radius: 0;
     -fx-border-radius: 0;
@@ -25,8 +26,8 @@
 }
 .sidePanelButtons:pressed{
 
-    -fx-background-radius: 50;
-    -fx-border-radius: 50;
-    -fx-background-color: rgb(4, 246, 125);
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-background-color: rgb(3, 166, 5);
 
 }
